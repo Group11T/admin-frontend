@@ -1,0 +1,18 @@
+<mat-drawer-container class="example-container fit-screen" autosize>
+    <button><mat-icon aria-hidden="false" type="button" aria-label="Example home icon" (click)="drawer.toggle()">notes</mat-icon></button>
+
+    <mat-drawer #drawer class="example-sidenav" mode="side">
+      <mat-list>
+        <mat-list-item><a routerLink="/users" routerLinkActive="active">Users</a></mat-list-item>
+        <mat-list-item><a routerLink="/orders" routerLinkActive="active">Oders</a></mat-list-item>
+        <mat-list-item>Something</mat-list-item>
+      </mat-list>
+      
+    </mat-drawer>
+  
+    <div >
+      <router-outlet></router-outlet>
+    </div>
+  
+  </mat-drawer-container>
+
